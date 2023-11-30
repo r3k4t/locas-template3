@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- External CSS  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Fontawesome 4 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap 3  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+
+<style>
+  /* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap'); */
+
+
+
+
+  * {
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+  }
+
+
+
+
+  /* Background Image Responsive CSS */
+  body {
+    /* width: 100%;
+  height: 400px;
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
+  background-size: initial; */
+
+    /* width: 100%;
+  height: 400px; */
+
+
+
+
+
+    background-image: url('img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+  }
+
+
+
+
+
+  /* h1 {
+    font-size: 75px;
+    color: white;
+  } */
+
+  p {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  }
+
+  h3 {
+    font-size: 20px;
+    color: white;
+  }
+
+
+  ul li a {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .navbar-brand {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .icon-bar {
+    background-color: white;
+    font-size: 40px;
+
+  }
+
+  /*pc/laptop min-width = 1170px */
+  @media(min-width:1170px) {
+
+    ul li a {
+      border: 100%;
+      border-radius: 5px;
+      background-color: #f4c430;
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 20px;
+      border-radius: 40px;
+
+    }
+
+    #navbar-logo {
+      margin-top: 20px;
+      font-size: 30px;
+    }
+
+    /* Newsletters form sizing --PC/Tab */
+    .form-control.input-lg {
+      /* border:100%; */
+
+      height: 55px;
+      outline-color: none;
+      /* border-radius: 10px; */
+      border-radius: 50px;
+
+    }
+
+    /* Newsletters form Subscribe button sizing --PC/Tab */
+    #subscribe-btn {
+      /* border:100%; */
+      border: none;
+      height: 55px;
+      font-weight: bolder;
+      font-size: 20px;
+      background-color: #f4c430;
+
+
+      /* border-radius:10px; */
+    }
+
+    .firstname {
+      margin-left: 15px;
+      font-size: 70px;
+
+    }
+
+    .lastname {
+
+      margin-left: 15px;
+      font-size: 70px;
+
+    }
+
+    /* Our service Font Size - pc/tab */
+    .services {
+      font-size: 75px;
+      color: white;
+
+    }
+
+
+  }
+
+  /* android max-width 952px */
+
+  @media(max-width:952px) {
+
+    /* Newsletters form sizing -android/ios*/
+
+    .form-control.input-lg {
+
+
+      height: 55px;
+      outline-color: none;
+
+      border-radius: 50px;
+
+    }
+
+    /* Newsletters form Subscribe button sizing --android/ios */
+    #subscribe-btn {
+
+      border: none;
+      height: 55px;
+      font-weight: bolder;
+      font-size: 20px;
+      background-color: #f4c430;
+
+
+      /* border-radius:10px; */
+    }
+
+    .firstname {
+      margin-left: 15px;
+      text-align: justify;
+      /* font-size:60px; */
+      font-size: 60px;
+    }
+
+    .lastname {
+      text-align: justify;
+      /* font-size:56px; */
+      font-size: 60px;
+      margin-left: 15px;
+
+    }
+
+/* Our service Font Size - android/ios */
+    .services {
+      font-size: 60px;
+      color: white;
+
+    }
+
+
+
+  }
+
+
+
+
+
+  /* ul li a{
+  background-color:aqua;
+  margin-left:20px;
+  margin-right:20px;
+} */
+
+
+  #footer {
+
+    /* background-color:#222222; */
+    /* background-color: #f4c430; */
+    /* background-color: ; */
+    /* background-color:rgb(120, 120, 151); */
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 33px;
+    padding-top: 15px;
+    padding-right: 33px;
+    padding-bottom: 0px;
+
+    /* padding:25px; */
+  }
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+  .bold {
+    font-weight: 800;
+
+
+  }
+</style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,500&display=swap');
+
+  .bold2 {
+    font-weight: 500;
+
+  }
+</style>
+
+
+
+<body>
+
+
+
+  <!--navbar menu-->
+
+
+  <nav class="navbar  navbar-me">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed menu-collapsed-button" data-toggle="collapse"
+          data-target="#navbar-primary-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" id="navbar-logo" href="#">LOCAS</a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-right  header-right-menu" id="navbar-primary-collapse">
+        <ul class="nav navbar-nav ">
+          <li class="page-scroll ">
+            <a class="header " href="javascript:" id="about-menu">About</a>
+          </li>
+          <li class="">
+            <a class=" " href="javascript:" id="services-menu">Services</a>
+          </li>
+          <li class=" ">
+            <a class=" " href="javascript:" id="Clients-menu">Clients</a>
+          </li>
+          <li class="">
+            <a class=" " href="javascript:" id="contact-menu">Contact</a>
+          </li>
+          <li class="">
+            <a class=" " href="javascript:" id="project-menu">Projects</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+
+
+
+
+
+
+  <!-- MATCH MARGIN TOP - 140PX  -->
+
+  <!-- header & newsletter -->
+
+  <div class="container text-left" style="margin-top:170px;">
+    <!-- line-height 
+    <p class="bold" style="margin-left:15px ;font-size:70px;line-height:65px"><strong>DHUM DHAM</strong>
+    </p> -->
+    <p class="firstname"><strong>DHUM DHAM</strong>
+    </p>
+    <p class="lastname"><strong>Event Planner</strong>
+    </p>
+    <!-- <p class="" style="margin-left:15px ;font-size: 62px;"><strong><em>EVENT PLANNER</em></strong>
+      </p> -->
+    <br>
+    <!-- <p class="text-center"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p> -->
+    <div class="col-lg-5 col-lg-offset-0" style="margin-left:0px">
+      <form id="emailForm">
+        <div class="form-group">
+          <div class="input-group">
+            <!-- <input type="text" class="form-control input-lg " name="email" placeholder="What is your .edu email?" > -->
+            <input type="text" class="form-control input-lg" name="email" placeholder="What is your .edu email?">
+            <span class="input-group-btn">
+
+              <button id="subscribe-btn" type="submit" class="btn btn-danger btn-lg ladda-button  "
+                data-style="expand-right" type="submit"><span class="ladda-label">Subscribe</span></button>
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+  <br>
+
+
+
+  <!-- services  -->
+
+
+
+
+
+
+
+
+
+  <div class="container text-center" style="margin-top:120px">
+
+    <h1 class="services" ><strong>Our Services</strong></h1>
+
+    <div class="panel-default">
+      <div class="panel-heading" style="margin-right:5px ;margin-left:5px ;margin-top:5px ;margin-bottom:5px;padding-left: 33px;padding-top:15px;padding-right: 33px;padding-bottom: 0px;
+        
+        
+        background-color:aliceblue;border-radius: 10px;">
+
+        <br>
+
+
+        <!-- <h3>OUR POPLOUR EVENT ITEMS</h3>
+      <p>The .thumbnail class can be used to display an image gallery.</p>
+      <p>The .caption class adds proper padding and a dark grey color to text inside thumbnails.</p>
+      <p>Click on the images to enlarge them.</p> -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="img-rounded">
+              <!-- <a href="https://placehold.it/300x200?text" target="_blank"> -->
+              <a href="img1.jpg" target="_blank">
+                <img src="img1.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <!-- <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p> -->
+
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="">
+              <a href="img2.jpg" target="_blank">
+                <img src="img2.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="">
+              <a href="img3.jpg" target="_blank">
+                <img src="img3.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="">
+              <a href="img4.jpg" target="_blank">
+                <img src="img4.jpg" alt="Lights" style="width:100%">
+                <div class="caption">
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+          <div class="col-md-4">
+            <!-- <div class="thumbnail"> -->
+            <div class="">
+              <a href="img5.jpg" target="_blank">
+                <img src="img5.jpg" alt="Nature" style="width:100%">
+                <div class="caption">
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+
+          <div class="col-md-4">
+            <div class="">
+              <a href="img6.jpg" target="_blank">
+                <img src="img6.jpg" alt="Fjords" style="width:100%">
+                <div class="caption">
+                  <p class="text-justify" style="color:#222222"><strong>Lorem ipsum donec id elit non mi porta gravida
+                      at eget metus.</strong> </p>
+                </div>
+              </a>
+            </div>
+            <br>
+
+          </div>
+
+
+
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+    <br>
+    <br>
+
+
+
+    <hr>
+
+
+
+
+
+    <!-- footer -->
+    <!-- <footer class="container-fluid" > -->
+
+    <!-- <p class="text-left" >Call Number: <b>01867384440</b></p> -->
+
+    <div class="container-fluid" id="footer">
+
+
+      <!-- <div class="panel-default">
+
+        <div class="panel-heading" id="footer" style="margin-right:5px ;margin-left:5px ;margin-top:5px ;margin-bottom:5px;
+        padding-left: 150px;padding-top:150px;padding-right: 150px;padding-bottom: 150px;
+        "> -->
+
+
+      <div class="row">
+
+        <div class="col-md-4 text-justify">
+
+
+          <h2 class="text-center" style="color:white">Follow us </h2>
+          <br>
+
+          <p class="text-center">
+
+
+            <b><a href="#" class="fa fa-facebook"
+                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
+            <b><a href="#" class="fa fa-twitter"
+                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
+            <b><a href="#" class="fa fa-youtube-play"
+                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
+            <b><a href="#" class="fa fa-instagram"
+                style="font-size:40px;margin-right:10px;margin-left:10px;margin-top:10px;margin-bottom:10px;color:white;text-decoration: none;"></a></b>
+          </p>
+          <!-- <br> -->
+          <p class="text-center">All Copyright Reserved 2023</p>
+          <!-- <br>
+              <br> -->
+          <!-- <p class="text-right">Made with <a href="https://github.com/r3k4t" target="_blank">
+                  <span class="love-symbol"> &#10084</span> <span class="rahatkhantusar">Rahat Khan Tusar</span><span class="love-symbol"> &#10084</span></a> </p>
+     -->
+
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4">
+
+
+          <h2 class="text-center" style="color:white">Contact </h2>
+          <br>
+
+          <!-- <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur odit, asperiores quae similique
+                reiciendis doloremque quidem dicta ipsa deserunt reprehenderit?</p> -->
+
+          <!-- <p class="text-justify" style="margin-left:105px">Savar,Dhaka</p>
+                <br>
+                <p class="text-justify" style="margin-left:105px">01867384440</p>
+                <br>
+                <p class="text-justify" style="margin-left:105px">info@mail.com</p>
+    
+     -->
+          <blockquote class="text-justify">
+            <p class="">A108 Adam Street
+              New York, NY 535022
+              United States</p>
+            <p class=""><b>Phone: </b>+8801867384440</p>
+            <p class=""><b>Email:</b> info@gmail.com</p>
+
+          </blockquote>
+
+
+        </div>
+
+
+
+
+
+        <div class="col-md-4">
+          <h2 class="text-center" style="color:white">About</h2>
+          <br>
+          <blockquote class="text-justify">
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore obcaecati perferendis
+              doloremque inventore dolores deleniti?
+            </p>
+        </div>
+
+        </blockquote>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+      <!-- </div>
+      </div> -->
+
+
+
+
+
+
+    </div>
+
+    <!-- 
+</footer> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
